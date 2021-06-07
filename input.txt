@@ -1,0 +1,47 @@
+/# author: Samaul Haque Malik
+   roll:1707097
+   email:malik1707097@stud.kuet.ac.bd
+   github:https://github.com/utso1707097
+#/
+
+import time
+import math
+
+
+
+void mymain fbo fbc sbo
+	5 jog 2 sm
+	9 vag 3 sm
+	5 gun 4 sm
+	4 biyog 2 sm
+	5 mod 2 sm
+	2 power 3 sm
+	# okay done 
+	fact fbo 5 fbc sm
+	sin fbo 60 fbc sm
+	cos fbo 60 fbc sm
+	tan fbo 30 fbc sm
+	ln fbo 100 fbc sm
+	# variable declaration and initialization
+	myint a cm b cm c cm d cm e cm f sm
+	a eq 10 sm
+	b eq 20 sm
+	d eq 2 sm
+	e eq 3 sm
+	c eq fbo a vag d fbc jog fbo b gun e fbc sm
+	printfunc fbo c fbc sm
+	iff fbo e gt d fbc sbo
+		printfunc fbo e fbc sm
+	sbc
+	elsee sbo
+		printfunc fbo d fbc sm
+	sbc
+	f eq 0 sm
+	floop fbo f till 10 fbc sbo
+		printfunc fbo a fbc sm
+	sbc
+	f eq 5 sm
+	whilee fbo f till 10 fbc sbo
+		printfunc fbo a fbc sm
+	sbc
+sbc

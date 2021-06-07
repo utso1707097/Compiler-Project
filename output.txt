@@ -1,0 +1,152 @@
+
+Header file found : import time
+
+Header file found : import math
+
+multiple line Comment found : 
+
+/# author: Samaul Haque Malik
+   roll:1707097
+   email:malik1707097@stud.kuet.ac.bd
+#/
+
+value of expression: 7
+
+.........................................
+
+value of expression: 3
+
+.........................................
+
+value of expression: 20
+
+.........................................
+
+value of expression: 2
+
+.........................................
+
+value of expression: 1
+
+.........................................
+
+value of expression: 8
+
+.........................................
+
+Single line Comment found : # okay done 
+
+Value of Factorial(5) is : 120
+
+value of expression: 120
+
+.........................................
+
+Value of Sin(60) is : 0.866025
+
+value of expression: 0
+
+.........................................
+
+Value of Cos(60) is : 0.500000
+
+value of expression: 0
+
+.........................................
+
+Value of Cos(30) is : 0.577350
+
+value of expression: 0
+
+.........................................
+
+Value of Log(100) is : 4.605170
+
+value of expression: 4
+
+.........................................
+
+Single line Comment found : # variable declaration and initialization
+interger declaration
+
+variable Dection
+
+.........................................
+Declaration
+
+Value of the variable: 10
+
+.........................................
+
+Value of the variable: 20
+
+.........................................
+
+Value of the variable: 2
+
+.........................................
+
+Value of the variable: 3
+
+.........................................
+
+Value of the variable: 65
+
+.........................................
+
+Print Expression 65
+
+.........................................
+
+Print Expression 3
+
+.........................................
+
+Print Expression 2
+
+.........................................
+value of expression in IF: 100
+
+.........................................
+
+Value of the variable: 0
+
+.........................................
+
+Print Expression 10
+
+.........................................
+FOR Loop executionValue of the loop: 0 expression value: 10
+Value of the loop: 1 expression value: 10
+Value of the loop: 2 expression value: 10
+Value of the loop: 3 expression value: 10
+Value of the loop: 4 expression value: 10
+Value of the loop: 5 expression value: 10
+Value of the loop: 6 expression value: 10
+Value of the loop: 7 expression value: 10
+Value of the loop: 8 expression value: 10
+Value of the loop: 9 expression value: 10
+
+.........................................
+
+Value of the variable: 5
+
+.........................................
+
+Print Expression 10
+
+.........................................
+WHILE Loop execution
+value of the loop: 5 expression value: 10
+
+value of the loop: 6 expression value: 10
+
+value of the loop: 7 expression value: 10
+
+value of the loop: 8 expression value: 10
+
+value of the loop: 9 expression value: 10
+
+.........................................
+
+Successful Compilation
