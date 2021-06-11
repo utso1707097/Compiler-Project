@@ -86,23 +86,10 @@
 		}
 		return sum;
 	}
-	int variablenumber=0;
-	int expressionnumber=0;
-	int variableassignment=0;
-	int switchnumber=0;
-	int printnumber=0;
-	int fornumber=0;
-	int arraynumber=0;
-	int classnumber=0;
-	int trycatchnumber=0;
-	int functionnumber=0;
-	int whilenumber=0;
-	int mathexpressionnumber=0;
-	int ifelsenumber=0;	
 
 
 /* Line 189 of yacc.c  */
-#line 106 "project.tab.c"
+#line 93 "project.tab.c"
 
 /* Enabling traces.  */
 #ifndef YYDEBUG
@@ -181,7 +168,7 @@ typedef int YYSTYPE;
 
 
 /* Line 264 of yacc.c  */
-#line 185 "project.tab.c"
+#line 172 "project.tab.c"
 
 #ifdef short
 # undef short
@@ -488,11 +475,11 @@ static const yytype_int8 yyrhs[] =
 /* YYRLINE[YYN] -- source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    51,    51,    53,    54,    56,    57,    59,    76,    83,
-      92,   103,   111,   123,   134,   139,   144,   145,   146,   147,
-     150,   151,   169,   172,   174,   176,   178,   180,   182,   193,
-     195,   197,   199,   201,   203,   206,   208,   210,   212,   214,
-     216,   218,   220
+       0,    38,    38,    40,    41,    43,    44,    46,    49,    54,
+      62,    71,    77,    86,    95,    98,   102,   103,   104,   105,
+     108,   109,   127,   130,   132,   134,   136,   138,   140,   152,
+     154,   156,   158,   160,   162,   165,   167,   169,   171,   173,
+     175,   177,   179
 };
 #endif
 
@@ -1534,97 +1521,76 @@ yyreduce:
         case 2:
 
 /* Line 1455 of yacc.c  */
-#line 51 "project.y"
+#line 38 "project.y"
     {printf("\nSuccessful Compilation\n");;}
     break;
 
   case 6:
 
 /* Line 1455 of yacc.c  */
-#line 57 "project.y"
-    { printf("Declaration\n"); variablenumber++;;}
+#line 44 "project.y"
+    { printf("Declaration\n");;}
     break;
 
   case 7:
 
 /* Line 1455 of yacc.c  */
-#line 59 "project.y"
+#line 46 "project.y"
     {
-							double i=(double) (yyvsp[(1) - (2)]) - (int) (yyvsp[(1) - (2)]);
-							if(sizeof((yyvsp[(1) - (2)]))==sizeof(char)){
-								printf("\nvalue of expression: %c\n", (yyvsp[(1) - (2)])); 
 								(yyval)=(yyvsp[(1) - (2)]);
-							}
-							else if(i!=0){
-								printf("\nvalue of expression: %lf\n", (yyvsp[(1) - (2)]));
-								(yyval)=(yyvsp[(1) - (2)]);
-							}
-							else if(i==0){
-								printf("\nvalue of expression: %d\n", (yyvsp[(1) - (2)]));
-								(yyval)=(yyvsp[(1) - (2)]);
-							}	
-							printf("\n.........................................\n");
-							expressionnumber++;
-						;}
+							;}
     break;
 
   case 8:
 
 /* Line 1455 of yacc.c  */
-#line 76 "project.y"
+#line 49 "project.y"
     {
-						printf("\nValue of the variable: %d\n",(yyvsp[(3) - (4)]));
+						printf("\nValue of the variable %c : %d\n",(yyvsp[(1) - (4)]),(yyvsp[(3) - (4)]));
 							sym[(yyvsp[(1) - (4)])]=(yyvsp[(3) - (4)]);
 							(yyval)=(yyvsp[(3) - (4)]);
-							printf("\n.........................................\n");
-						variableassignment++;
 					;}
     break;
 
   case 9:
 
 /* Line 1455 of yacc.c  */
-#line 83 "project.y"
+#line 54 "project.y"
     {
 									int i;
 									printf("FOR Loop execution");
 									for(i=(yyvsp[(3) - (9)]);i<(yyvsp[(5) - (9)]);i++){
 										printf("Value of the loop: %d ",i);
 										printf("expression value: %d\n", (yyvsp[(8) - (9)]));
-									}
-									printf("\n.........................................\n");	
+									}	
 								;}
     break;
 
   case 10:
 
 /* Line 1455 of yacc.c  */
-#line 92 "project.y"
+#line 62 "project.y"
     {
 	                                int i;
 	                                printf("WHILE Loop execution");
-	                                for(i=(yyvsp[(3) - (9)]);i<(yyvsp[(5) - (9)]);i++) {printf("\nvalue of the loop: %d expression value: %d\n", i,(yyvsp[(8) - (9)]));}
-	                                printf("\n.........................................\n");									
-				               whilenumber++;
+	                                for(i=(yyvsp[(3) - (9)]);i<(yyvsp[(5) - (9)]);i++) {printf("\nvalue of the loop: %d expression value: %d\n", i,(yyvsp[(8) - (9)]));}		
 				        ;}
     break;
 
   case 11:
 
 /* Line 1455 of yacc.c  */
-#line 103 "project.y"
+#line 71 "project.y"
     {
 		printf("\nSWITCH CASE Declaration\n");
 		printf("\nFinally Choose Case number :-> %d\n",(yyvsp[(3) - (7)]));
-		printf("\n.........................................\n");
-		switchnumber++;
 	;}
     break;
 
   case 12:
 
 /* Line 1455 of yacc.c  */
-#line 111 "project.y"
+#line 77 "project.y"
     {
 								if((yyvsp[(3) - (7)])){
 									printf("\nvalue of expression in IF: %d\n",(yyvsp[(6) - (7)]));
@@ -1632,16 +1598,13 @@ yyreduce:
 								else{
 									printf("\ncondition value zero in IF block\n");
 								}
-
-								printf("\n.........................................\n");
-								ifelsenumber++;
 							;}
     break;
 
   case 13:
 
 /* Line 1455 of yacc.c  */
-#line 123 "project.y"
+#line 86 "project.y"
     {
 								if((yyvsp[(3) - (11)])){
 									printf("value of expression in IF: %d\n",(yyvsp[(6) - (11)]));
@@ -1649,110 +1612,106 @@ yyreduce:
 								else{
 									printf("value of expression in ELSE: %d\n",(yyvsp[(10) - (11)]));
 								}
-								ifelsenumber++;
-								printf("\n.........................................\n");
 							;}
     break;
 
   case 14:
 
 /* Line 1455 of yacc.c  */
-#line 134 "project.y"
-    {printf("\nPrint Expression %d\n",(yyvsp[(3) - (5)]));
-		printnumber++;
-		printf("\n.........................................\n");;}
+#line 95 "project.y"
+    {printf("\nPrint Expression %d\n",(yyvsp[(3) - (5)]));;}
     break;
 
   case 15:
 
 /* Line 1455 of yacc.c  */
-#line 139 "project.y"
-    {printf("\nvariable Dection\n");
-		printf("\n.........................................\n");;}
+#line 98 "project.y"
+    {printf("\nvariable Dection\n");;}
     break;
 
   case 16:
 
 /* Line 1455 of yacc.c  */
-#line 144 "project.y"
+#line 102 "project.y"
     {printf("interger declaration\n");;}
     break;
 
   case 17:
 
 /* Line 1455 of yacc.c  */
-#line 145 "project.y"
+#line 103 "project.y"
     {printf("float declaration\n");;}
     break;
 
   case 18:
 
 /* Line 1455 of yacc.c  */
-#line 146 "project.y"
+#line 104 "project.y"
     {printf("char declaration\n");;}
     break;
 
   case 19:
 
 /* Line 1455 of yacc.c  */
-#line 147 "project.y"
+#line 105 "project.y"
     {printf("string declaration\n");;}
     break;
 
   case 22:
 
 /* Line 1455 of yacc.c  */
-#line 169 "project.y"
+#line 127 "project.y"
     { (yyval)=(yyvsp[(1) - (1)]); ;}
     break;
 
   case 23:
 
 /* Line 1455 of yacc.c  */
-#line 172 "project.y"
+#line 130 "project.y"
     { (yyval) = sym[(yyvsp[(1) - (1)])]; ;}
     break;
 
   case 24:
 
 /* Line 1455 of yacc.c  */
-#line 174 "project.y"
-    { (yyval) = (yyvsp[(1) - (3)]) + (yyvsp[(3) - (3)]); ;}
+#line 132 "project.y"
+    { (yyval) = (yyvsp[(1) - (3)]) + (yyvsp[(3) - (3)]);printf("\nvalue of addition: %d\n", (yyval)); ;}
     break;
 
   case 25:
 
 /* Line 1455 of yacc.c  */
-#line 176 "project.y"
-    { (yyval) = (yyvsp[(1) - (3)]) - (yyvsp[(3) - (3)]); ;}
+#line 134 "project.y"
+    { (yyval) = (yyvsp[(1) - (3)]) - (yyvsp[(3) - (3)]);printf("\nvalue of subtraction: %d\n", (yyval)); ;}
     break;
 
   case 26:
 
 /* Line 1455 of yacc.c  */
-#line 178 "project.y"
-    { (yyval) = (yyvsp[(1) - (3)]) * (yyvsp[(3) - (3)]); ;}
+#line 136 "project.y"
+    { (yyval) = (yyvsp[(1) - (3)]) * (yyvsp[(3) - (3)]);printf("\nvalue of multiplication: %d\n", (yyval)); ;}
     break;
 
   case 27:
 
 /* Line 1455 of yacc.c  */
-#line 180 "project.y"
-    { (yyval) = (yyvsp[(1) - (3)]) % (yyvsp[(3) - (3)]); ;}
+#line 138 "project.y"
+    { (yyval) = (yyvsp[(1) - (3)]) % (yyvsp[(3) - (3)]);printf("\nvalue of modulus: %d\n", (yyval)); ;}
     break;
 
   case 28:
 
 /* Line 1455 of yacc.c  */
-#line 182 "project.y"
+#line 140 "project.y"
     { 	if((yyvsp[(3) - (3)])) 
 				  		{
 				     		(yyval) = (yyvsp[(1) - (3)]) / (yyvsp[(3) - (3)]);
+							 printf("\nvalue of division: %d\n", (yyval));
 				  		}
 				  		else
 				  		{
 							(yyval) = 0;
-							printf("\ndivision by zero\t");
+							printf("\ndivision by zero failed to divide\t");
 				  		} 	
 				    ;}
     break;
@@ -1760,105 +1719,105 @@ yyreduce:
   case 29:
 
 /* Line 1455 of yacc.c  */
-#line 193 "project.y"
-    { (yyval) = pow((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)])); ;}
+#line 152 "project.y"
+    { (yyval) = pow((yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]));printf("\nvalue of %d power %d: %d\n",(yyvsp[(1) - (3)]),(yyvsp[(3) - (3)]),(yyval)); ;}
     break;
 
   case 30:
 
 /* Line 1455 of yacc.c  */
-#line 195 "project.y"
+#line 154 "project.y"
     {printf("\nValue of Factorial(%d) is : %d\n",(yyvsp[(3) - (4)]),fact((yyvsp[(3) - (4)]))); (yyval) = fact((yyvsp[(3) - (4)])); ;}
     break;
 
   case 31:
 
 /* Line 1455 of yacc.c  */
-#line 197 "project.y"
+#line 156 "project.y"
     {printf("\nValue of Sin(%d) is : %lf\n",(yyvsp[(3) - (4)]),sin((yyvsp[(3) - (4)])*PI/180)); (yyval)=sin((yyvsp[(3) - (4)])*PI/180);;}
     break;
 
   case 32:
 
 /* Line 1455 of yacc.c  */
-#line 199 "project.y"
+#line 158 "project.y"
     {printf("\nValue of Cos(%d) is : %lf\n",(yyvsp[(3) - (4)]),cos((yyvsp[(3) - (4)])*PI/180)); (yyval)=cos((yyvsp[(3) - (4)])*PI/180); ;}
     break;
 
   case 33:
 
 /* Line 1455 of yacc.c  */
-#line 201 "project.y"
+#line 160 "project.y"
     {printf("\nValue of Log(%d) is : %lf\n",(yyvsp[(3) - (4)]),(log((yyvsp[(3) - (4)])))); (yyval)=(log((yyvsp[(3) - (4)]))); ;}
     break;
 
   case 34:
 
 /* Line 1455 of yacc.c  */
-#line 203 "project.y"
+#line 162 "project.y"
     {printf("\nValue of Cos(%d) is : %lf\n",(yyvsp[(3) - (4)]),tan((yyvsp[(3) - (4)])*PI/180)); (yyval)=tan((yyvsp[(3) - (4)])*PI/180); ;}
     break;
 
   case 35:
 
 /* Line 1455 of yacc.c  */
-#line 206 "project.y"
+#line 165 "project.y"
     { sym[(yyvsp[(1) - (3)])] = sym[(yyvsp[(3) - (3)])]; printf("Value of variable: %d",sym[(yyvsp[(3) - (3)])]); ;}
     break;
 
   case 36:
 
 /* Line 1455 of yacc.c  */
-#line 208 "project.y"
+#line 167 "project.y"
     { (yyval) = (sym[(yyvsp[(1) - (3)])] == sym[(yyvsp[(3) - (3)])]); ;}
     break;
 
   case 37:
 
 /* Line 1455 of yacc.c  */
-#line 210 "project.y"
+#line 169 "project.y"
     { (yyval) = (sym[(yyvsp[(1) - (3)])] != sym[(yyvsp[(3) - (3)])]); ;}
     break;
 
   case 38:
 
 /* Line 1455 of yacc.c  */
-#line 212 "project.y"
+#line 171 "project.y"
     { (yyval) = ((yyvsp[(1) - (3)]) < (yyvsp[(3) - (3)])); ;}
     break;
 
   case 39:
 
 /* Line 1455 of yacc.c  */
-#line 214 "project.y"
+#line 173 "project.y"
     { (yyval) = ((yyvsp[(1) - (3)]) <= (yyvsp[(3) - (3)])); ;}
     break;
 
   case 40:
 
 /* Line 1455 of yacc.c  */
-#line 216 "project.y"
+#line 175 "project.y"
     { (yyval) = ((yyvsp[(1) - (3)]) > (yyvsp[(3) - (3)])); ;}
     break;
 
   case 41:
 
 /* Line 1455 of yacc.c  */
-#line 218 "project.y"
+#line 177 "project.y"
     { (yyval) = ((yyvsp[(1) - (3)]) >= (yyvsp[(3) - (3)])); ;}
     break;
 
   case 42:
 
 /* Line 1455 of yacc.c  */
-#line 220 "project.y"
+#line 179 "project.y"
     { (yyval) = (yyvsp[(2) - (3)]);	;}
     break;
 
 
 
 /* Line 1455 of yacc.c  */
-#line 1862 "project.tab.c"
+#line 1821 "project.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -2070,7 +2029,7 @@ yyreturn:
 
 
 /* Line 1675 of yacc.c  */
-#line 223 "project.y"
+#line 182 "project.y"
 
 
 void yyerror(char *s) {

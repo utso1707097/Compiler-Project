@@ -11,10 +11,11 @@ import math
 
 void mymain fbo fbc sbo
 	5 jog 2 sm
-	9 vag 3 sm
-	5 gun 4 sm
 	4 biyog 2 sm
-	5 mod 2 sm
+	5 gun 4 sm
+	9 vag 3 sm
+	10 vag 0 sm
+	5 mod 3 sm
 	2 power 3 sm
 	# okay done 
 	fact fbo 5 fbc sm
