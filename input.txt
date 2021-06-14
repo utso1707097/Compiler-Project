@@ -10,13 +10,13 @@ import math
 
 
 void mymain fbo fbc sbo
-	5 jog 2 sm
-	4 biyog 2 sm
+	1.5 jog 2.5 sm
+	4.5 biyog 2 sm
 	5 gun 4 sm
 	9 vag 3 sm
 	10 vag 0 sm
 	5 mod 3 sm
-	2 power 3 sm
+	2 power 4 sm
 	# okay done 
 	fact fbo 5 fbc sm
 	sin fbo 60 fbc sm
@@ -24,25 +24,58 @@ void mymain fbo fbc sbo
 	tan fbo 30 fbc sm
 	ln fbo 100 fbc sm
 	# variable declaration and initialization
-	myint a cm b cm c cm d cm e cm f sm
+	myfloat a cm b cm c cm d cm e cm f sm
 	a eq 10 sm
 	b eq 20 sm
 	d eq 2 sm
 	e eq 3 sm
 	c eq fbo a vag d fbc jog fbo b gun e fbc sm
-	printfunc fbo c fbc sm
+	printval c sm
 	iff fbo e gt d fbc sbo
-		printfunc fbo e fbc sm
+		printval e sm
 	sbc
 	elsee sbo
-		printfunc fbo d fbc sm
+		printval d sm
 	sbc
 	f eq 0 sm
 	floop fbo f till 10 fbc sbo
-		printfunc fbo a fbc sm
+		printval a sm
 	sbc
 	f eq 5 sm
-	whilee fbo f till 10 fbc sbo
-		printfunc fbo a fbc sm
+	whilee fbo f neq 10 fbc sbo
+		inc f sm
 	sbc
+	f eq 5 sm
+	whilee fbo f neq 0 fbc sbo
+		dec f sm
+	sbc
+	#switch case declaration
+	swc fbo a fbc sbo
+	casee 1 :
+		5 jog 2 sm
+	casee 2 :
+		7 biyog 4 sm
+	default :
+		7 jog 3 sm
+	sbc
+
+	# read write statement
+	myfloat x cm y cm z sm
+	x eq 2021 sm
+	y eq 11 sm
+	z eq -12 sm
+	# now we will execute some of our built in functions
+	show the author name is utso sm
+	evenodd x sm
+	leapyear x sm
+	isprime y sm
+	fibonacci till y sm
+	summation till 100 sm
+	square y sm
+	cube y sm
+	inc y sm
+	printval y sm
+	dec y sm
+	printval y sm
+	posneg z sm
 sbc

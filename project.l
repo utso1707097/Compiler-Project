@@ -10,15 +10,19 @@
 %}
 
 KEYWORDS iff,elsee,floop,lt,gt,lte,gte,eq,eqeq,neq,fbo,fbc,sbo,sbc,jog,biyog,gun,vag,mod,power,fact,sin,cos,tan,ln,till
+BUILTINFUNCTION evenodd,leapyear,isprime,fibonacci,summation,square,cube,posneg
 DATATYPE myint,mychar,myfloat,mystring,void mymain
 PUNCTUATION sm,cm
 header		"import ".*
-
 %%
 [#].*					{printf("\nSingle line Comment found : ");ECHO;printf("\n");}
 [/][#](.*|\n)*[#][/]			{printf("\nmultiple line Comment found : \n");printf("\n");ECHO;printf("\n");}
-[a-z]					{ yylval=*yytext;return VARIABLE; }
-[0-9]*[.]?[0-9]+			{ yylval=atoi(yytext);return NUMBER; }
+
+[s][h][o][w].*[s][m]			{printf("\n");ECHO;printf("\n");}
+
+[a-z]					{ yylval.itype = *yytext - 'a'; return VARIABLE; }
+[0-9]*[.]?[0-9]+			{ yylval.dtype = atof(yytext); return NUMBER ; }
+[-][0-9]*[.]?[0-9]+			{ yylval.dtype = atof(yytext); return NUMBER ; }
 
 "myint"					{ return INT; }
 "mychar"				{ return CHAR; }
@@ -67,8 +71,17 @@ header		"import ".*
 "cos"					{ return COS; }
 "tan"					{ return TAN; }
 "ln"					{ return LN; }
-
-"printfunc"	 			{return PRINTFUNCTION; } 
+"evenodd"				{ return EVENODD; }
+"leapyear"				{ return LEAPYEAR; }
+"isprime"				{ return ISPRIME; }
+"fibonacci"				{ return FIBONACCI; }
+"summation"				{ return SUMMATION; }
+"square"				{ return SQUARE; }
+"cube"					{ return CUBE; }
+"takeinput"				{ return READ; }
+"writeoutput"			{ return WRITE; }		
+"printval"	 			{ return PRINTVAL; } 
+"posneg"				{ return POSNEG;}
 
 ":"					{ return ':'; }
 "inc"					{ return INC ; }

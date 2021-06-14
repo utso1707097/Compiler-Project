@@ -55,7 +55,7 @@
      CASE = 271,
      SWITCH = 272,
      DEFAULT = 273,
-     PRINTFUNCTION = 274,
+     PRINTVAL = 274,
      SIN = 275,
      COS = 276,
      TAN = 277,
@@ -72,15 +72,37 @@
      INC = 288,
      DEC = 289,
      WHILE = 290,
-     IFX = 291,
-     eq = 292
+     READ = 291,
+     WRITE = 292,
+     EVENODD = 293,
+     LEAPYEAR = 294,
+     ISPRIME = 295,
+     FIBONACCI = 296,
+     SUMMATION = 297,
+     SQUARE = 298,
+     CUBE = 299,
+     POSNEG = 300,
+     POWER = 301
    };
 #endif
 
 
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef int YYSTYPE;
+typedef union YYSTYPE
+{
+
+/* Line 1676 of yacc.c  */
+#line 23 "project.y"
+ 
+  int itype;
+  double dtype;   
+
+
+
+/* Line 1676 of yacc.c  */
+#line 105 "project.tab.h"
+} YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1

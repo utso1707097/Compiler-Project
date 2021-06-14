@@ -11,86 +11,146 @@ Header file found : import time
 
 Header file found : import math
 
-value of addition: 7
+value of addition: 4.00
 
-value of subtraction: 2
+value of subtraction: 2.50
 
-value of multiplication: 20
+value of multiplication: 20.00
 
-value of division: 3
+value of division: 3.00
 
 division by zero failed to divide	
 value of modulus: 2
 
-value of 2 power 3: 8
+value of 2 power 4: 16.00
 
 Single line Comment found : # okay done 
 
 Value of Factorial(5) is : 120
 
-Value of Sin(60) is : 0.866025
+Value of Sin(60) is : 0.87
 
-Value of Cos(60) is : 0.500000
+Value of Cos(60) is : 0.50
 
-Value of Cos(30) is : 0.577350
+Value of Tan(30) is : 0.58
 
-Value of Log(100) is : 4.605170
+Value of Log(100) is :  4.61
 
 Single line Comment found : # variable declaration and initialization
-interger declaration
+float declaration
 
-variable Dection
+variable Declaration 
 Declaration
 
-Value of the variable a : 10
+Value of the variable a : 10.00
 
-Value of the variable b : 20
+Value of the variable b : 20.00
 
-Value of the variable d : 2
+Value of the variable d : 2.00
 
-Value of the variable e : 3
+Value of the variable e : 3.00
 
-value of division: 5
+value of division: 5.00
 
-value of multiplication: 60
+value of multiplication: 60.00
 
-value of addition: 65
+value of addition: 65.00
 
-Value of the variable c : 65
+Value of the variable c : 65.00
 
-Print Expression 65
+Printed value of Expression 65.00
 
-Print Expression 3
+Printed value of Expression 3.00
 
-Print Expression 2
-value of expression in IF: 100
+Printed value of Expression 2.00
+value of expression in IF: 3.00
 
-Value of the variable f : 0
+Value of the variable f : 0.00
 
-Print Expression 10
-FOR Loop executionValue of the loop: 0 expression value: 10
-Value of the loop: 1 expression value: 10
-Value of the loop: 2 expression value: 10
-Value of the loop: 3 expression value: 10
-Value of the loop: 4 expression value: 10
-Value of the loop: 5 expression value: 10
-Value of the loop: 6 expression value: 10
-Value of the loop: 7 expression value: 10
-Value of the loop: 8 expression value: 10
-Value of the loop: 9 expression value: 10
+Printed value of Expression 10.00
+FOR Loop executionValue of the loop: 0 expression value: 10.00
+Value of the loop: 1 expression value: 10.00
+Value of the loop: 2 expression value: 10.00
+Value of the loop: 3 expression value: 10.00
+Value of the loop: 4 expression value: 10.00
+Value of the loop: 5 expression value: 10.00
+Value of the loop: 6 expression value: 10.00
+Value of the loop: 7 expression value: 10.00
+Value of the loop: 8 expression value: 10.00
+Value of the loop: 9 expression value: 10.00
 
-Value of the variable f : 5
+Value of the variable f : 5.00
 
-Print Expression 10
-WHILE Loop execution
-value of the loop: 5 expression value: 10
+while Loop execution
+hello for 5 time
+hello for 6 time
+hello for 7 time
+hello for 8 time
+hello for 9 time
 
-value of the loop: 6 expression value: 10
+Value of the variable f : 5.00
 
-value of the loop: 7 expression value: 10
+while Loop execution
+hello for 5 time
+hello for 4 time
+hello for 3 time
+hello for 2 time
+hello for 1 time
 
-value of the loop: 8 expression value: 10
+Single line Comment found : #switch case declaration
 
-value of the loop: 9 expression value: 10
+value of addition: 7.00
+
+ value of case 1 is 7.00 
+
+value of subtraction: 3.00
+
+ value of case 2 is 3.00 
+
+value of addition: 10.00
+
+ value of default is 10.00 
+
+ Switch case statement ended 
+
+Single line Comment found : # read write statement
+float declaration
+
+variable Declaration 
+Declaration
+
+Value of the variable x : 2021.00
+
+Value of the variable y : 11.00
+
+Value of the variable z : -12.00
+
+Single line Comment found : # now we will execute some of our built in functions
+
+show the author name is utso sm
+
+2021 is odd
+
+2021 is not leap year
+
+11 is a prime number
+
+First 11 fibonacci numbers are: 0 1 1 2 3 5 8 13 21 34 55
+
+ The summation of 1 to 100 is 5050
+
+square of 11 is 121
+
+cube of 11 is 1331
+
+value incremented 
+
+Printed value of Expression 12.00
+
+value decremented 
+
+Printed value of Expression 11.00
+
+You entered a negative number.
 
 Successful Compilation
